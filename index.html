@@ -1,0 +1,224 @@
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title data-es="Impara — App para aprender idiomas" data-en="Impara — Language-learning app">Impara — Language-learning app</title>
+<meta name="description" content="Impara: a language-learning app for Android, in development. Guided lessons, active practice and review." data-es="Impara: una app para aprender idiomas en Android, en desarrollo. Lecciones guiadas, práctica activa y repaso." data-en="Impara: a language-learning app for Android, in development. Guided lessons, active practice and review.">
+<link rel="canonical" href="https://impara.org/">
+<meta name="theme-color" content="#000000">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Impara">
+<meta property="og:title" content="Impara — Language-learning app">
+<meta property="og:description" content="Impara: a language-learning app for Android, in development. Guided lessons, active practice and review.">
+<meta property="og:url" content="https://impara.org/">
+<meta property="og:image" content="https://impara.org/assets/img/og-impara.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="assets/css/impara.css">
+<script>(function(){var r=document.documentElement;r.className=r.className.replace('no-js','js');var l=null;try{l=localStorage.getItem('impara-lang')}catch(e){}if(l!=='es'&&l!=='en'){l=null;var a=navigator.languages&&navigator.languages.length?navigator.languages:[navigator.language||navigator.userLanguage||'en'];for(var i=0;i<a.length;i++){var c=String(a[i]).toLowerCase();if(c.indexOf('es')===0){l='es';break}if(c.indexOf('en')===0){l='en';break}}}r.lang=l||'en';})();</script>
+</head>
+<body>
+<canvas id="stars" aria-hidden="true"></canvas>
+<a class="skip" href="#main"><span data-lang="es">Saltar al contenido</span><span data-lang="en">Skip to content</span></a>
+<header class="site-header">
+  <a class="brand" href="./" aria-label="Impara">IMPARA <small><span data-lang="es">/ por satsh</span><span data-lang="en">/ by satsh</span></small></a>
+  <button class="nav-toggle" aria-expanded="false" aria-controls="nav" data-aria-es="Menú" data-aria-en="Menu" aria-label="Menu"><span></span></button>
+  <nav class="nav" id="nav">
+    <a href="#about"><span data-lang="es">Qué es</span><span data-lang="en">What it is</span></a>
+    <a href="#practice"><span data-lang="es">Practica</span><span data-lang="en">Practice</span></a>
+    <a href="#lesson"><span data-lang="es">Lecciones</span><span data-lang="en">Lessons</span></a>
+    <a href="#languages"><span data-lang="es">Idiomas</span><span data-lang="en">Languages</span></a>
+    <a href="https://satsh.org" target="_blank" rel="noopener">satsh&nbsp;↗</a>
+    <div class="lang" role="group" aria-label="Idioma / Language"><button data-set="es" type="button">ES</button><button data-set="en" type="button">EN</button></div>
+  </nav>
+</header>
+<main id="main">
+
+  <!-- ============================================================ HERO -->
+  <section class="panel" id="top">
+    <div class="layer layer--cool" data-parallax="0.10"></div>
+    <div class="layer layer--orb" data-parallax="0.30"></div>
+    <div class="layer layer--warm" data-parallax="0.18"></div>
+
+    <span class="layer word" style="--x:5%;--y:12%;--ym:11%;--s:clamp(54px,9vw,140px);--o:.2;--t:12s;--dl:-3s" data-parallax="-0.30" aria-hidden="true" lang="und"><span class="depth" data-depth="26"><span class="w">Hola</span></span></span>
+    <span class="layer word word--out" style="--x:60%;--y:7%;--ym:14%;--s:clamp(70px,13vw,210px);--o:.2;--b:1px;--t:15s" data-parallax="-0.12" aria-hidden="true" lang="und"><span class="depth" data-depth="10"><span class="w">Hello</span></span></span>
+    <span class="layer word" style="--x:31%;--y:6%;--ym:4%;--s:clamp(28px,4.6vw,72px);--o:.2;--t:8s;--dl:-4s" data-parallax="-0.60" aria-hidden="true" lang="und"><span class="depth" data-depth="54"><span class="w">Guten Tag</span></span></span>
+    <span class="layer word" style="--x:24%;--y:26%;--ym:23%;--s:clamp(34px,6vw,96px);--o:.24;--t:10s;--dl:-6s" data-parallax="-0.46" aria-hidden="true" lang="und"><span class="depth" data-depth="40"><span class="w">Bonjour</span></span></span>
+    <span class="layer word" style="--x:76%;--y:30%;--ym:27%;--s:clamp(70px,11vw,176px);--o:.17;--b:.6px;--t:13s;--dl:-2s" data-parallax="-0.22" aria-hidden="true" lang="und"><span class="depth" data-depth="20"><span class="w">你好</span></span></span>
+    <span class="layer word word--out" style="--x:1%;--y:29%;--ym:33%;--s:clamp(44px,7vw,100px);--o:.2;--b:1px;--t:14s;--dl:-8s" data-parallax="-0.16" aria-hidden="true" lang="und"><span class="depth" data-depth="14"><span class="w">Ciao</span></span></span>
+    <span class="layer word hide-sm" style="--x:46%;--y:46%;--s:clamp(32px,5.6vw,92px);--o:.26;--t:9s;--dl:-1s" data-parallax="-0.54" aria-hidden="true" lang="und"><span class="depth" data-depth="46"><span class="w">안녕하세요</span></span></span>
+    <span class="layer word word--out hide-sm" style="--x:60%;--y:56%;--s:clamp(40px,8vw,128px);--o:.22;--t:12s;--dl:-5s" data-parallax="-0.34" aria-hidden="true" lang="und"><span class="depth" data-depth="30"><span class="w">Ciao</span></span></span>
+    <span class="layer word word--out hide-sm" style="--x:70%;--y:73%;--s:clamp(40px,7vw,112px);--o:.2;--t:13s;--dl:-9s" data-parallax="-0.40" aria-hidden="true" lang="und"><span class="depth" data-depth="36"><span class="w">Kumusta</span></span></span>
+    <span class="layer word hide-sm" style="--x:44%;--y:78%;--s:clamp(36px,6vw,96px);--o:.2;--t:11s;--dl:-7s" data-parallax="-0.28" aria-hidden="true" lang="und"><span class="depth" data-depth="34"><span class="w">Cześć</span></span></span>
+    <span class="layer word hide-sm" style="--x:78%;--y:87%;--s:clamp(28px,4.6vw,76px);--o:.2;--t:10s;--dl:-3s" data-parallax="-0.50" aria-hidden="true" lang="und"><span class="depth" data-depth="42"><span class="w">Привет</span></span></span>
+
+    <div class="layer layer--vignette"></div>
+    <div class="panel__content">
+      <p class="eyebrow reveal"><span data-lang="es">satsh · App para Android</span><span data-lang="en">satsh · Android app</span></p>
+      <span class="chip-status reveal" style="--d:.08s"><span data-lang="es">En desarrollo</span><span data-lang="en">In development</span></span>
+      <h1 class="display reveal" style="--d:.16s">IMPARA</h1>
+      <p class="lead reveal" style="--d:.24s"><span data-lang="es">Aprende idiomas con lecciones guiadas: primero las palabras, después las frases y mucha práctica.</span><span data-lang="en">Learn languages with guided lessons: words first, then sentences, and plenty of practice.</span></p>
+      <div class="actions reveal" style="--d:.32s">
+        <a class="btn" href="#about"><span data-lang="es">Descubre Impara</span><span data-lang="en">Discover Impara</span> <span class="arrow">↓</span></a>
+        <a class="btn btn--ghost" href="#languages"><span data-lang="es">Ver idiomas</span><span data-lang="en">See languages</span></a>
+      </div>
+    </div>
+    <span class="scroll-hint" aria-hidden="true"></span>
+  </section>
+
+  <!-- ============================================================ QUÉ ES -->
+  <section class="section section--layers section--dark" id="about" aria-labelledby="t-about">
+    <span class="layer word word--out" style="--x:56%;--y:3%;--s:clamp(90px,15vw,240px);--o:.12" data-parallax="-0.10" aria-hidden="true" lang="und"><span class="w">Impara</span></span>
+    <div class="layer layer--cool" style="opacity:.7" data-parallax="0.08"></div>
+    <div class="section__inner">
+      <p class="eyebrow reveal"><span data-lang="es">Qué es</span><span data-lang="en">What it is</span></p>
+      <h2 class="statement reveal" id="t-about"><span data-lang="es"><em>Impara</em> es una app para aprender idiomas en Android: lecciones guiadas, práctica activa y cada palabra explicada antes de usarla.</span><span data-lang="en"><em>Impara</em> is an Android app for learning languages: guided lessons, active practice and every word explained before you use it.</span></h2>
+      <p class="etym reveal"><span data-lang="es">Impara · en italiano, «aprende»</span><span data-lang="en">Impara · Italian for “learns”</span></p>
+      <div class="grid grid--4">
+        <div class="feature reveal"><div class="num">01</div><h3><span data-lang="es">Construye</span><span data-lang="en">Build</span></h3>
+          <p><span data-lang="es">Arma frases ficha por ficha. Las expresiones se mantienen completas como una sola pieza cuando así se aprenden mejor.</span><span data-lang="en">Put sentences together tile by tile. Expressions stay whole as a single piece when that is the better way to learn them.</span></p></div>
+        <div class="feature reveal" style="--d:.1s"><div class="num">02</div><h3><span data-lang="es">Completa</span><span data-lang="en">Complete</span></h3>
+          <p><span data-lang="es">Rellena el hueco de una frase y descubre cómo encaja cada palabra en su lugar.</span><span data-lang="en">Fill in the gap in a sentence and see how each word fits into place.</span></p></div>
+        <div class="feature reveal" style="--d:.2s"><div class="num">03</div><h3><span data-lang="es">Compara</span><span data-lang="en">Compare</span></h3>
+          <p><span data-lang="es">Contrasta frases parecidas: afirmativa y negativa, formal e informal, yo y ella. Las diferencias se vuelven obvias.</span><span data-lang="en">Contrast similar sentences: positive and negative, formal and casual, I and she. The differences become obvious.</span></p></div>
+        <div class="feature reveal" style="--d:.3s"><div class="num">04</div><h3><span data-lang="es">Escucha</span><span data-lang="en">Listen</span></h3>
+          <p><span data-lang="es">Oye cada palabra y cada frase, y arma lo que escuchas, sin tener el texto delante.</span><span data-lang="en">Hear every word and sentence, then build what you hear without the text in front of you.</span></p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================ PRACTICA (teléfono + paralaje) -->
+  <section class="panel panel--center panel--tall" id="practice" aria-labelledby="t-practice">
+    <div class="layer layer--warm" style="height:90%" data-parallax="0.20"></div>
+    <div class="layer layer--rings" style="right:-30vmin;top:50%;margin-top:-60vmin" data-parallax="0.12" aria-hidden="true">
+      <svg class="rings" viewBox="0 0 100 100" aria-hidden="true" focusable="false"><circle cx="50" cy="50" r="49.5"/><circle cx="50" cy="50" r="38"/><circle cx="50" cy="50" r="27"/></svg>
+      <div class="orbit"><i></i></div><div class="orbit orbit--b"><i></i></div>
+    </div>
+    <span class="layer word word--out" style="--x:3%;--y:10%;--s:clamp(70px,12vw,190px);--o:.14;--b:1px" data-parallax="-0.14" aria-hidden="true" lang="und"><span class="depth" data-depth="12"><span class="w">Ciao</span></span></span>
+    <span class="layer word" style="--x:34%;--y:84%;--s:clamp(40px,7vw,108px);--o:.14;--t:12s" data-parallax="-0.36" aria-hidden="true" lang="und"><span class="depth" data-depth="30"><span class="w">你好</span></span></span>
+    <div class="layer layer--vignette" style="opacity:.8"></div>
+
+    <div class="stage">
+      <div>
+        <p class="eyebrow reveal"><span data-lang="es">Pruébalo</span><span data-lang="en">Try it</span></p>
+        <h2 class="display display--md reveal" id="t-practice" style="--d:.08s"><span data-lang="es">Toca.<br>Arma.<br>Aprende.</span><span data-lang="en">Tap.<br>Build.<br>Learn.</span></h2>
+        <p class="lead reveal" style="--d:.16s"><span data-lang="es">Así se practica en Impara: toca las fichas en el orden correcto hasta armar la frase en italiano.</span><span data-lang="en">This is how practice works in Impara: tap the tiles in the right order until you build the sentence in Italian.</span></p>
+        <div class="actions reveal" style="--d:.24s">
+          <a class="btn btn--ghost" href="#lesson"><span data-lang="es">Cómo es una lección</span><span data-lang="en">What a lesson is like</span> <span class="arrow">↓</span></a>
+        </div>
+      </div>
+
+      <div class="phone-wrap reveal" style="--d:.1s">
+        <div class="layer float-tile" style="left:-2%;top:12%" data-parallax="-0.30" aria-hidden="true" lang="und"><span class="depth" data-depth="30"><span class="w" style="--t:9s">Come</span></span></div>
+        <div class="layer float-tile" style="right:-2%;top:34%" data-parallax="-0.48" aria-hidden="true" lang="und"><span class="depth" data-depth="46"><span class="w" style="--t:11s;--dl:-4s">stai,</span></span></div>
+        <div class="layer float-tile" style="left:2%;bottom:14%" data-parallax="-0.22" aria-hidden="true" lang="und"><span class="depth" data-depth="22"><span class="w" style="--t:10s;--dl:-7s">Anna?</span></span></div>
+
+        <div class="depth" data-depth="0" style="width:100%;display:flex;justify-content:center">
+          <div class="tilt" data-tilt="7">
+            <div class="phone demo" role="group" aria-label="Demo">
+              <div class="ph-top"><span class="ph-x" aria-hidden="true">✕</span><div class="ph-bar"><i></i></div></div>
+              <p class="ph-title"><span data-lang="es">Construye la frase</span><span data-lang="en">Build the sentence</span></p>
+              <div class="ph-prompt">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9v6h4l5 4V5L8 9H4z"/><path d="M16.5 8.5a5 5 0 0 1 0 7"/><path d="M19 6a8.5 8.5 0 0 1 0 12"/></svg>
+                <span data-lang="es">¿Cómo estás, Anna?</span><span data-lang="en">How are you, Anna?</span>
+              </div>
+              <div class="ph-answer" aria-live="polite"></div>
+              <div class="ph-bank">
+                <button class="tile" type="button" data-w="Come" lang="it">Come</button>
+                <button class="tile" type="button" data-w="stai," lang="it">stai,</button>
+                <button class="tile" type="button" data-w="Anna?" lang="it">Anna?</button>
+              </div>
+              <div class="ph-feedback" aria-live="polite"><span data-lang="es">✓ ¡Muy bien!</span><span data-lang="en">✓ Great job!</span></div>
+              <button class="ph-go" type="button" disabled>
+                <span class="l-check"><span data-lang="es">Comprobar</span><span data-lang="en">Check</span></span>
+                <span class="l-next"><span data-lang="es">Otra vez</span><span data-lang="en">Again</span></span>
+              </button>
+            </div>
+          </div>
+        </div>
+        <p class="demo-note"><span data-lang="es">Vista ilustrativa · no es una captura de la app</span><span data-lang="en">Illustrative preview · not a screenshot of the app</span></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================ LECCIONES -->
+  <section class="section section--layers section--bordered section--dark" id="lesson" aria-labelledby="t-lesson">
+    <div class="layer layer--warm" style="height:60%;opacity:.7" data-parallax="0.12"></div>
+    <div class="section__inner split">
+      <div class="split__head">
+        <p class="eyebrow reveal"><span data-lang="es">Una lección</span><span data-lang="en">A lesson</span></p>
+        <h2 class="title reveal" id="t-lesson"><span data-lang="es">De lo nuevo<br>al repaso</span><span data-lang="en">From new<br>to review</span></h2>
+        <p class="lead reveal"><span data-lang="es">Cada lección sigue el mismo orden, para que nunca avances sobre algo que todavía no entiendes.</span><span data-lang="en">Every lesson follows the same order, so you never move on from something you don’t yet understand.</span></p>
+      </div>
+      <ol class="steps">
+        <li class="reveal"><div><h3><span data-lang="es">Conoces lo nuevo</span><span data-lang="en">Meet what’s new</span></h3><p><span data-lang="es">Palabras y expresiones nuevas, con su audio y su explicación. Nada aparece en un ejercicio sin haberse enseñado antes.</span><span data-lang="en">New words and expressions, with audio and an explanation. Nothing shows up in an exercise before it has been taught.</span></p></div></li>
+        <li class="reveal"><div><h3><span data-lang="es">Lo practicas al momento</span><span data-lang="en">Practice it right away</span></h3><p><span data-lang="es">Después de cada expresión nueva viene un ejercicio con ella, antes de seguir adelante.</span><span data-lang="en">After each new expression comes an exercise with it, before moving on.</span></p></div></li>
+        <li class="reveal"><div><h3><span data-lang="es">Avanzas con pistas</span><span data-lang="en">Move on with hints</span></h3><p><span data-lang="es">Si te atoras, la pista te ayuda a resolver justo ese ejercicio, con ejemplos concretos en lugar de teoría abstracta.</span><span data-lang="en">If you get stuck, the hint helps you solve that exact exercise, with concrete examples instead of abstract theory.</span></p></div></li>
+        <li class="reveal"><div><h3><span data-lang="es">Cierras con un repaso</span><span data-lang="en">Finish with a review</span></h3><p><span data-lang="es">Cada lección va seguida de un repaso. No trae palabras nuevas: solo practica lo que ya viste.</span><span data-lang="en">Each lesson is followed by a review. It brings no new words: it only practices what you’ve already seen.</span></p></div></li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- ============================================================ IDIOMAS -->
+  <section class="section section--layers section--bordered" id="languages" aria-labelledby="t-languages">
+    <div class="marquee" style="top:2%;left:-6%" data-px="0.55" aria-hidden="true" lang="und">HOLA <b>·</b> HELLO <b>·</b> CIAO <b>·</b> 你好 <b>·</b> 안녕 <b>·</b> BONJOUR <b>·</b> HALLO <b>·</b> ПРИВЕТ <b>·</b> CZEŚĆ <b>·</b> KUMUSTA</div>
+    <div class="marquee" style="bottom:1%;left:-60%" data-px="-0.55" aria-hidden="true" lang="und">KUMUSTA <b>·</b> CZEŚĆ <b>·</b> ПРИВЕТ <b>·</b> HALLO <b>·</b> BONJOUR <b>·</b> 안녕 <b>·</b> 你好 <b>·</b> CIAO <b>·</b> HELLO <b>·</b> HOLA</div>
+    <div class="layer layer--warm" style="height:55%;opacity:.8" data-parallax="0.10"></div>
+    <div class="section__inner">
+      <p class="eyebrow reveal"><span data-lang="es">Idiomas</span><span data-lang="en">Languages</span></p>
+      <h2 class="title reveal" id="t-languages"><span data-lang="es">Cursos en camino</span><span data-lang="en">Courses on the way</span></h2>
+      <p class="lead reveal"><span data-lang="es">Estos son los cursos que estamos construyendo para Impara.</span><span data-lang="en">These are the courses we’re building for Impara.</span></p>
+      <div class="index-list">
+        <div class="index-row reveal"><span class="n">01</span><span><strong lang="en">English</strong><span class="sub"><span data-lang="es">Inglés</span><span data-lang="en">English</span></span></span><span class="for"><span data-lang="es">Para hispanohablantes</span><span data-lang="en">For Spanish speakers</span></span><span class="tag"><span data-lang="es">En desarrollo</span><span data-lang="en">In development</span></span></div>
+        <div class="index-row reveal"><span class="n">02</span><span><strong lang="zh">中文</strong><span class="sub"><span data-lang="es">Mandarín</span><span data-lang="en">Mandarin</span></span></span><span class="for"><span data-lang="es">Para hablantes de inglés</span><span data-lang="en">For English speakers</span></span><span class="tag"><span data-lang="es">En desarrollo</span><span data-lang="en">In development</span></span></div>
+        <div class="index-row reveal"><span class="n">03</span><span><strong lang="de">Deutsch</strong><span class="sub"><span data-lang="es">Alemán</span><span data-lang="en">German</span></span></span><span class="for"><span data-lang="es">Para hablantes de inglés</span><span data-lang="en">For English speakers</span></span><span class="tag"><span data-lang="es">En desarrollo</span><span data-lang="en">In development</span></span></div>
+        <div class="index-row reveal"><span class="n">04</span><span><strong lang="fr">Français</strong><span class="sub"><span data-lang="es">Francés</span><span data-lang="en">French</span></span></span><span class="for"><span data-lang="es">Para hablantes de inglés</span><span data-lang="en">For English speakers</span></span><span class="tag"><span data-lang="es">En desarrollo</span><span data-lang="en">In development</span></span></div>
+        <div class="index-row reveal"><span class="n">05</span><span><strong lang="it">Italiano</strong><span class="sub"><span data-lang="es">Italiano</span><span data-lang="en">Italian</span></span></span><span class="for"><span data-lang="es">Para hablantes de inglés</span><span data-lang="en">For English speakers</span></span><span class="tag"><span data-lang="es">En desarrollo</span><span data-lang="en">In development</span></span></div>
+        <div class="index-row reveal"><span class="n">06</span><span><strong lang="ko">한국어</strong><span class="sub"><span data-lang="es">Coreano</span><span data-lang="en">Korean</span></span></span><span class="for"><span data-lang="es">Para hablantes de inglés</span><span data-lang="en">For English speakers</span></span><span class="tag"><span data-lang="es">En desarrollo</span><span data-lang="en">In development</span></span></div>
+        <div class="index-row reveal"><span class="n">07</span><span><strong lang="fil">Filipino</strong><span class="sub"><span data-lang="es">Filipino · tagalo</span><span data-lang="en">Filipino · Tagalog</span></span></span><span class="for"><span data-lang="es">Para hablantes de inglés</span><span data-lang="en">For English speakers</span></span><span class="tag"><span data-lang="es">En desarrollo</span><span data-lang="en">In development</span></span></div>
+        <div class="index-row reveal"><span class="n">08</span><span><strong lang="pl">Polski</strong><span class="sub"><span data-lang="es">Polaco</span><span data-lang="en">Polish</span></span></span><span class="for"><span data-lang="es">Para hablantes de inglés</span><span data-lang="en">For English speakers</span></span><span class="tag"><span data-lang="es">En desarrollo</span><span data-lang="en">In development</span></span></div>
+        <div class="index-row reveal"><span class="n">09</span><span><strong lang="ru">Русский</strong><span class="sub"><span data-lang="es">Ruso</span><span data-lang="en">Russian</span></span></span><span class="for"><span data-lang="es">Para hablantes de inglés</span><span data-lang="en">For English speakers</span></span><span class="tag"><span data-lang="es">En desarrollo</span><span data-lang="en">In development</span></span></div>
+      </div>
+      <p class="fineprint reveal"><span data-lang="es">Impara sigue en desarrollo: el catálogo y el orden en que lleguen los cursos pueden cambiar.</span><span data-lang="en">Impara is still in development: the catalog and the order in which courses arrive may change.</span></p>
+    </div>
+  </section>
+
+  <!-- ============================================================ LLAMADA FINAL -->
+  <section class="panel cta-panel" id="soon" aria-labelledby="t-soon">
+    <div class="layer layer--warm" style="height:100%" data-parallax="0.16"></div>
+    <div class="layer layer--rings" style="left:50%;top:50%;margin:-60vmin 0 0 -60vmin" data-parallax="0.08" aria-hidden="true">
+      <svg class="rings" viewBox="0 0 100 100" aria-hidden="true" focusable="false"><circle cx="50" cy="50" r="49.5"/><circle cx="50" cy="50" r="38"/><circle cx="50" cy="50" r="27"/></svg>
+      <div class="orbit"><i></i></div><div class="orbit orbit--b"><i></i></div>
+    </div>
+    <span class="layer word" style="--x:8%;--y:16%;--s:clamp(44px,8vw,120px);--o:.16;--t:12s" data-parallax="-0.30" aria-hidden="true" lang="und"><span class="depth" data-depth="26"><span class="w">Ciao</span></span></span>
+    <span class="layer word word--out" style="--x:70%;--y:12%;--s:clamp(60px,11vw,170px);--o:.18;--b:1px;--t:14s" data-parallax="-0.14" aria-hidden="true" lang="und"><span class="depth" data-depth="12"><span class="w">Hola</span></span></span>
+    <span class="layer word hide-sm" style="--x:78%;--y:70%;--s:clamp(44px,8vw,120px);--o:.16;--t:11s;--dl:-5s" data-parallax="-0.40" aria-hidden="true" lang="und"><span class="depth" data-depth="40"><span class="w">你好</span></span></span>
+    <span class="layer word word--out hide-sm" style="--x:6%;--y:68%;--s:clamp(40px,7vw,104px);--o:.2;--t:13s;--dl:-8s" data-parallax="-0.24" aria-hidden="true" lang="und"><span class="depth" data-depth="22"><span class="w">안녕</span></span></span>
+    <div class="layer layer--vignette"></div>
+    <div class="panel__content">
+      <p class="eyebrow reveal"><span data-lang="es">Muy pronto</span><span data-lang="en">Coming soon</span></p>
+      <h2 class="display display--md reveal" id="t-soon" style="--d:.08s"><span data-lang="es">Impara está<br>en camino</span><span data-lang="en">Impara is<br>on its way</span></h2>
+      <p class="lead reveal" style="--d:.16s"><span data-lang="es">Estamos terminando la app para Android. Mientras tanto, conoce los demás proyectos de satsh.</span><span data-lang="en">We’re finishing the Android app. In the meantime, take a look at satsh’s other projects.</span></p>
+      <div class="actions reveal" style="--d:.24s">
+        <!-- Cuando exista la ficha en Google Play, cambia este <span> por <a class="btn" href="URL"> -->
+        <span class="btn btn--soon" aria-disabled="true"><span data-lang="es">Google Play · pronto</span><span data-lang="en">Google Play · soon</span></span>
+        <a class="btn btn--ghost" href="https://satsh.org" target="_blank" rel="noopener"><span data-lang="es">Conocer satsh</span><span data-lang="en">Explore satsh</span> <span class="arrow">↗</span></a>
+      </div>
+    </div>
+  </section>
+
+</main>
+<footer class="site-footer">
+  <a class="brand" href="./">IMPARA</a>
+  <div class="links">
+    <a href="#about"><span data-lang="es">Qué es</span><span data-lang="en">What it is</span></a>
+    <a href="#languages"><span data-lang="es">Idiomas</span><span data-lang="en">Languages</span></a>
+    <a href="https://satsh.org" target="_blank" rel="noopener">satsh&nbsp;↗</a>
+    <a href="https://satsh.org/lunagen/" target="_blank" rel="noopener">Lunagen&nbsp;↗</a>
+  </div>
+  <span>© <span data-year>2026</span> satsh</span>
+</footer>
+<script src="assets/js/impara.js" defer></script>
+</body>
+</html>
